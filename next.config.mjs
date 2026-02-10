@@ -2,7 +2,7 @@
 const nextConfig = {
   output: "export",
 
-  basePath: "/vosc",
+  basePath: "/",
 
   typescript: {
     ignoreBuildErrors: true,
