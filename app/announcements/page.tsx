@@ -17,9 +17,7 @@ export default function AnnouncementsPage() {
               ← back
             </Link>
             <h1 className="text-5xl font-bold mb-4">announcements</h1>
-            <p className="text-gray-600">
-              Latest updates from the OSC community.
-            </p>
+            <p className="text-gray-600">Latest updates from the community.</p>
           </div>
         </div>
       </section>
@@ -27,12 +25,14 @@ export default function AnnouncementsPage() {
       <section className="py-24 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {announcements.map((announcement) => (
-              <AnnouncementCard
-                key={announcement.id}
-                announcement={announcement}
-              />
-            ))}
+            {announcements
+              .map((announcement) => (
+                <AnnouncementCard
+                  key={announcement.id}
+                  announcement={announcement}
+                />
+              ))
+              .reverse()}
           </div>
         </div>
       </section>

@@ -1,32 +1,8 @@
 [
   {
     "id": "1",
-    "title": "New Workshop Series Announced",
-    "date": "Nov 14, 2024",
-    "excerpt": "We are launching a new series of workshops focused on backend development and DevOps. Sign up now!"
-  },
-  {
-    "id": "2",
-    "title": "Member of the Month: Alex Kumar",
-    "date": "Nov 10, 2024",
-    "excerpt": "Congratulations to Alex Kumar for contributing 50+ commits this month to our projects!"
-  },
-  {
-    "id": "3",
-    "title": "GitHub Sponsorship Open",
-    "date": "Nov 5, 2024",
-    "excerpt": "Support our open-source projects and community initiatives through GitHub sponsors."
-  },
-  {
-    "id": "4",
-    "title": "OSC Hackathon 2024 Results",
-    "date": "Nov 1, 2024",
-    "excerpt": "Amazing projects were submitted. Check out the winners and all submissions on our GitHub."
-  },
-  {
-    "id": "5",
-    "title": "Welcome to OSC!",
-    "date": "Oct 28, 2024",
-    "excerpt": "Our community has grown to 500+ members. Thank you for being part of OSC @ Vasavi!"
+    "title": "Welcome to VOSC!",
+    "date": "Nov 21, 2025",
+    "excerpt": "Glad to have you onboard. Let's create a community together."
   }
 ]

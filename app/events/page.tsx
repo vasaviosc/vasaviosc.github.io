@@ -46,9 +46,8 @@ export default function EventsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {events
                 .filter((e) => e.status === "past")
-                .map((event) => (
-                  <EventCard key={event.id} event={event} />
-                ))}
+                .map((event) => <EventCard key={event.id} event={event} />)
+                .reverse()}
             </div>
           </div>
         </div>
