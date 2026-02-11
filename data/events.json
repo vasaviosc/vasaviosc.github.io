@@ -1,50 +1,34 @@
 [
   {
     "id": "1",
-    "slug": "git-workshop",
-    "title": "Git Fundamentals Workshop",
-    "date": "Nov 22, 2024, 3:00 PM",
-    "status": "upcoming",
-    "description": "Learn the basics of version control and git workflows. Perfect for beginners."
+    "slug": "zero-to-pr",
+    "title": "Zero to Pull Request",
+    "date": "Nov 21, 2025, 10:00 PM",
+    "status": "past",
+    "description": "Explore the world of open source contributions. Also, presenting VOSC!"
   },
   {
     "id": "2",
-    "slug": "advanced-git",
-    "title": "Advanced Git & GitHub",
-    "date": "Nov 29, 2024, 4:00 PM",
-    "status": "upcoming",
-    "description": "Master advanced git techniques and GitHub collaboration workflows."
+    "slug": "git-workshop",
+    "title": "Git Fundamentals Workshop",
+    "date": "Jan 25, 2026, 3:00 PM",
+    "status": "past",
+    "description": "Learn the basics of version control and git workflows. Perfect for beginners."
   },
   {
     "id": "3",
-    "slug": "osc-bootcamp",
-    "title": "Open Source Contribution Bootcamp",
-    "date": "Nov 15, 2024 - Nov 20, 2024",
+    "slug": "domain-discovery",
+    "title": "Domain Discovery",
+    "date": "Feb 7, 2026, 10:00 AM",
     "status": "past",
-    "description": "Join us in contributing to real open-source projects. Week-long intensive."
+    "description": "Find your domain, build your Open Source journey."
   },
   {
     "id": "4",
-    "slug": "react-dev",
-    "title": "Web Dev with React",
-    "date": "Nov 8, 2024",
-    "status": "past",
-    "description": "Building modern web applications with React. Full workshop recording available."
-  },
-  {
-    "id": "5",
-    "slug": "py-for-ds",
-    "title": "Python for Data Science",
-    "date": "Nov 1, 2024",
-    "status": "past",
-    "description": "Introduction to data science with Python and Pandas."
-  },
-  {
-    "id": "6",
-    "slug": "linux-essentials",
-    "title": "Linux Essentials",
-    "date": "Oct 25, 2024",
-    "status": "past",
-    "description": "Everything you need to know about Linux command line."
+    "slug": "repoquest",
+    "title": "RepoQuest",
+    "date": "Feb 21, 2026, 10:00 AM",
+    "status": "upcoming",
+    "description": "Learn to navigate and understand large repos and codebases. "
   }
 ]
