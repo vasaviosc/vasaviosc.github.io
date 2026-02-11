@@ -1,10 +1,6 @@
 # vosc - vasavi open source community
 
-## TODO:
-
-- blog based posts for blogs/events/announcements (mdx)
-- vercel KV for event interest count
-- CI pipeline to parse/abstract content
+experimentation & quickstart toy branch. will probably rename. or not.
 
 ## Screenshots
 
