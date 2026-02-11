@@ -2,9 +2,9 @@
 
 ## TODO:
 
-- blog based posts for blogs/events/announcements (mdx)
-- vercel KV for event interest count
-- CI pipeline to parse/abstract content
+- blogs (mdx)
+- dynamic (vercel deploy?) event page + event forms
+- CI pipeline to parse/abstract content (?)
 
 ## Screenshots
 
