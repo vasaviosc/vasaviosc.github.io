@@ -35,7 +35,7 @@ export default function EventCard({ event }: EventCardProps) {
         href={`/events/${event.slug}`}
         className="text-sm font-medium border-b border-black hover:opacity-60 transition-opacity"
       >
-        learn more →
+        view more →
       </Link>
     </div>
   );
