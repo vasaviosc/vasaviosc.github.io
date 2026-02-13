@@ -3,7 +3,6 @@
 ## TODO:
 
 - blogs (mdx)
-- dynamic (vercel deploy?) event page + event forms
 - CI pipeline to parse/abstract content (?)
 
 ## Screenshots
