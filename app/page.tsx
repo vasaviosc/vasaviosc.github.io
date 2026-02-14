@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import EventCard from "@/components/event-card";
 import AnnouncementCard from "@/components/announcement-card";
