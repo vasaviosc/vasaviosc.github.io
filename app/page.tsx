@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import EventCard from "@/components/event-card";
 import AnnouncementCard from "@/components/announcement-card";
@@ -8,27 +7,18 @@ import announcements from "@/data/announcements.json";
 import events from "@/data/events.json";
 
 export default function Home() {
-  const [heroVisible, setHeroVisible] = useState(false);
-
-  useEffect(() => {
-    setHeroVisible(true);
-  }, []);
-
   return (
     <main className="bg-white">
       {/* Hero Section */}
-
       <section
         className="relative min-h-screen flex items-center justify-center pt-16 px-4 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('./vosc-ascii-art.png')" }}
       >
-        <div className="absolute inset-0 bg-white/88"></div>
+        <div className="absolute inset-0 bg-white/88" />
 
         <div className="relative z-10 text-center">
           <h1
-            className={`text-9xl md:text-[250px] font-black leading-none mb-6 transition-opacity duration-1000 ${
-              heroVisible ? "opacity-100" : "opacity-0"
-            }`}
+            className="text-9xl md:text-[250px] font-black leading-none mb-6 opacity-0 animate-fade-in"
             style={{
               letterSpacing: "-0.02em",
               fontWeight: 900,
@@ -37,29 +27,23 @@ export default function Home() {
             vosc
           </h1>
 
-          <p
-            className={`text-xl text-gray-500 tracking-wide transition-opacity duration-1000 delay-200 ${
-              heroVisible ? "opacity-100" : "opacity-0"
-            }`}
-          >
+          <p className="text-xl text-gray-500 tracking-wide opacity-0 animate-fade-in delay-200">
             vasavi open source community
           </p>
+
           <div className="mt-12 flex justify-center gap-4">
             <Link
               href="/events"
-              className="bg-black text-white px-6 py-3 text-sm font-medium transition-opacity border border-black"
+              className="bg-black text-white px-6 py-3 text-sm font-medium border border-black"
             >
               explore
             </Link>
           </div>
         </div>
 
-        <div
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 transition-opacity duration-1000 delay-[1500ms]"
-          style={{ opacity: heroVisible ? 1 : 0 }}
-        >
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-0 animate-fade-in delay-[1500ms]">
           <div className="w-6 h-10 border-2 border-gray-600 rounded-full flex justify-center pt-2">
-            <div className="w-1 h-2 bg-gray-600 rounded-full animate-bounce"></div>
+            <div className="w-1 h-2 bg-gray-600 rounded-full animate-bounce" />
           </div>
         </div>
       </section>
@@ -68,10 +52,13 @@ export default function Home() {
       <section className="py-24 px-4 border-t border-black">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-4">announcements</h2>
+
           <Link href="/announcements" className="text-sm text-gray-600 mb-12">
             view all
           </Link>
-          <div className="mb-16"></div>
+
+          <div className="mb-16" />
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {announcements
               .slice(0, 3)
@@ -90,16 +77,19 @@ export default function Home() {
       <section className="py-24 px-4 border-t border-black bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-4">events</h2>
+
           <Link href="/events" className="text-sm text-gray-600 mb-4">
             view all
           </Link>
-          <div className="mb-12"></div>
 
-          {/* Upcoming Events */}
+          <div className="mb-12" />
+
+          {/* Upcoming */}
           <div className="mb-16">
             <h3 className="text-lg font-semibold mb-6 uppercase tracking-widest text-xs">
               upcoming
             </h3>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {events
                 .filter((e) => e.status === "upcoming")
@@ -108,11 +98,12 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Past Events */}
+          {/* Past */}
           <div>
             <h3 className="text-lg font-semibold mb-6 uppercase tracking-widest text-xs">
               past
             </h3>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {events
                 .slice(0, 4)
