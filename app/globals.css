@@ -1,25 +1,11 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+@import "tw-animate-css";
 @import "highlight.js/styles/github.css";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme {
-  --animate-fade-in: fade-in 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-      transform: translateY(8px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
 }
 
 @theme inline {

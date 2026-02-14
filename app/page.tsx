@@ -16,7 +16,7 @@ export default function Home() {
 
         <div className="relative z-10 text-center">
           <h1
-            className="text-9xl md:text-[250px] font-black leading-none mb-6 opacity-0 animate-fade-in"
+            className="text-9xl md:text-[250px] font-black leading-none mb-6 animate-in fade-in duration-750"
             style={{
               letterSpacing: "-0.02em",
               fontWeight: 900,
@@ -25,7 +25,7 @@ export default function Home() {
             vosc
           </h1>
 
-          <p className="text-xl text-gray-500 tracking-wide opacity-0 animate-fade-in delay-200">
+          <p className="text-xl text-gray-500 tracking-wide animate-in fade-in duration-750">
             vasavi open source community
           </p>
 
@@ -39,7 +39,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-0 animate-fade-in delay-[1500ms]">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-in fade-in slide-in-from-bottom-100 duration-500">
           <div className="w-6 h-10 border-2 border-gray-600 rounded-full flex justify-center pt-2">
             <div className="w-1 h-2 bg-gray-600 rounded-full animate-bounce" />
           </div>
