@@ -60,7 +60,7 @@ then, use $state.eager. use sparingly, i presume.
 
 ### state as functions
 
-regular ass addition
+regular addition
 
 ```ts
 function add(a: number, b: number) {
