@@ -1,9 +1,8 @@
 # vosc - vasavi open source community
 
-## TODO:
+website for vasavi open source community.
 
-- blogs (mdx)
-- CI pipeline to parse/abstract content (?)
+upload blogs @ [vosc-blogs](https://github.com/vasaviosc/vosc-blogs)
 
 ## Screenshots
 
