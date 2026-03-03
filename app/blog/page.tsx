@@ -53,7 +53,7 @@ export default function BlogPage() {
                   </Link>
                 </article>
               ))}
-              <article className="border-b border-gray-200 pb-12 last:border-b-0">
+              {/* <article className="border-b border-gray-200 pb-12 last:border-b-0">
                 <Link
                   href={`https://bhushanwho.github.io/blog/gentlyrust`}
                   className="group block hover:opacity-80 transition-opacity"
@@ -62,7 +62,7 @@ export default function BlogPage() {
                     [external]: informal introduction to rust
                   </h2>
                 </Link>
-              </article>
+              </article> */}
             </div>
           )}
         </div>

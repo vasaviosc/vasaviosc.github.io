@@ -1,7 +1,6 @@
 ---
 title: "scattershow of svelte"
 date: 2026-02-09 08:21
-author: "bhushanwho"
 ---
 
 [svelte reference](https://svelte.dev/docs/svelte/svelte)
