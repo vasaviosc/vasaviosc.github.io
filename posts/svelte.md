@@ -1,5 +1,5 @@
 ---
-title: "scattershow of svelte"
+title: "svelte"
 date: 2026-02-09 08:21
 ---
 
