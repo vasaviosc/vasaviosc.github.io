@@ -1,6 +1,7 @@
 ---
 title: "svelte"
 date: 2026-02-09 08:21
+author: "anon"
 ---
 
 [svelte reference](https://svelte.dev/docs/svelte/svelte)

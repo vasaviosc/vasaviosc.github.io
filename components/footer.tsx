@@ -62,7 +62,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://github.com/vasaviosc"
+                  href="https://github.com/vasavi-osc"
                   className="text-gray-600 hover:text-black transition"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -77,7 +77,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  discord
+                  whatsapp
                 </a>
               </li>
             </ul>

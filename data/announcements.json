@@ -3,6 +3,12 @@
     "id": "1",
     "title": "Welcome to VOSC!",
     "date": "Nov 21, 2025",
-    "excerpt": "Glad to have you onboard. Let's create a community together."
+    "excerpt": "Glad to have you onboard. Really."
+  },
+  {
+    "id": "2",
+    "title": "GSoC Applications Open",
+    "date": "Mar 16, 2026",
+    "excerpt": "If you're thinking of it, just apply."
   }
 ]
