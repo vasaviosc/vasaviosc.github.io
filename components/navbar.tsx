@@ -6,71 +6,79 @@ import { useState } from "react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
   const links = [
     { label: "home", href: "/" },
     { label: "events", href: "/events" },
     { label: "announcements", href: "/announcements" },
-    { label: "blog", href: "/blog" },
+    { label: "resources", href: "/blog" },
   ];
 
   return (
-    <nav className="fixed top-0 w-full bg-white border-b border-black z-50">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="flex justify-between items-center h-28">
-          <Link href="/" className="flex items-center gap-4">
-            <div className="flex items-center gap-3">
-              {" "}
-              <Image
-                src="/vosc-ascii-logo.png"
-                alt="VOSC Logo"
-                width={32}
-                height={32}
-                className="w-15 h-15"
-              />
-            </div>
+    <nav className="fixed top-0 z-50 w-full border-b border-[#64ff9a]/40 bg-[#03111f]/95 backdrop-blur-md">
+      <div className="mx-auto max-w-7xl px-5">
+        <div className="flex h-24 items-center justify-between">
+          {/* VOSC LOGO */}
+          <Link
+            href="/"
+            className="flex items-center gap-3"
+            aria-label="VOSC Home"
+          >
+            <Image
+              src="/vosc-logo.png"
+              alt="VOSC Logo"
+              width={76}
+              height={76}
+              priority
+              className="h-[68px] w-[68px] object-contain"
+            />
+
             <div className="hidden sm:block">
-              <span className="text-3xl font-bold tracking-tight block">
-                vosc
+              <span className="block text-3xl font-black tracking-[0.18em] text-[#64ff9a]">
+                VOSC
               </span>
-              <span className="text-xs text-gray-500">
-                contribute. collaborate. innovate.
+              <span className="font-mono text-[11px] tracking-wide text-[#8abca1]">
+                Vasavi Open Source Community
               </span>
             </div>
           </Link>
 
-          {/* Desktop Links */}
-          <div className="hidden md:flex gap-8 items-center">
+          {/* DESKTOP NAVIGATION */}
+          <div className="hidden items-center gap-8 md:flex">
             {links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-base hover:opacity-60 transition-opacity duration-200"
+                className="font-mono text-sm capitalize text-[#d9f5e5] transition-colors duration-200 hover:text-[#64ff9a]"
               >
                 {link.label}
               </Link>
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* MOBILE MENU BUTTON */}
           <button
-            className="md:hidden flex flex-col gap-1.5 p-2"
+            type="button"
+            className="flex flex-col gap-1.5 rounded-md border border-[#64ff9a]/30 p-3 text-[#64ff9a] transition-colors hover:bg-[#64ff9a]/10 md:hidden"
             onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isOpen}
           >
-            <div className="w-5 h-0.5 bg-black"></div>
-            <div className="w-5 h-0.5 bg-black"></div>
-            <div className="w-5 h-0.5 bg-black"></div>
+            <span className="h-0.5 w-5 bg-current" />
+            <span className="h-0.5 w-5 bg-current" />
+            <span className="h-0.5 w-5 bg-current" />
           </button>
         </div>
 
-        {/* Mobile Menu */}
+        {/* MOBILE NAVIGATION */}
         {isOpen && (
-          <div className="md:hidden border-t border-black py-4 space-y-3">
+          <div className="space-y-1 border-t border-[#64ff9a]/20 py-4 md:hidden">
             {links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="block text-sm py-2 hover:opacity-60 transition-opacity"
+                onClick={() => setIsOpen(false)}
+                className="block rounded-md px-3 py-3 font-mono text-sm capitalize text-[#d9f5e5] transition-colors hover:bg-[#64ff9a]/10 hover:text-[#64ff9a]"
               >
                 {link.label}
               </Link>
